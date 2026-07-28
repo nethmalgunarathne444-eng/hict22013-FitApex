@@ -13,12 +13,7 @@ export default function Footer() {
       { name: "Health Vitals", href: "/vitals" },
       { name: "Medicine Reminder", href: "/reminders" },
     ],
-    company: [
-      { name: "About Us", href: "/about" },
-      { name: "Blog", href: "/blog" },
-      { name: "Careers", href: "/careers" },
-      { name: "Contact", href: "/contact" },
-    ],
+    
     support: [
       { name: "Help Center", href: "/help" },
       { name: "Privacy Policy", href: "/privacy" },
@@ -34,7 +29,7 @@ export default function Footer() {
         <div className="mx-auto max-w-7xl">
           <div className="flex flex-col items-center justify-between gap-8 lg:flex-row">
             <div className="text-center lg:text-left">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight leading-tight">
+              <h2 className="text-1xl sm:text-2xl lg:text-3xl font-bold text-white tracking-tight leading-tight">
                 Ready to Take Control
                 <br />
                 of Your Health?
@@ -46,18 +41,7 @@ export default function Footer() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center">
-              <Link 
-                href="/register" 
-                className="w-full sm:w-auto text-center rounded-xl bg-white px-8 py-4 font-semibold text-[#2563EB] transition-all hover:bg-blue-50 active:scale-[0.98] shadow-sm"
-              >
-                Get Started Free →
-              </Link>
-              <Link 
-                href="/dashboard" 
-                className="w-full sm:w-auto text-center rounded-xl border border-white/40 px-8 py-4 font-semibold text-white transition-colors hover:bg-white/10"
-              >
-                Explore Dashboard
-              </Link>
+              
             </div>
           </div>
         </div>
@@ -102,28 +86,6 @@ export default function Footer() {
 
           {/* Newsletter Form Column */}
           <div className="sm:col-span-2 md:col-span-1">
-            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-slate-900">
-              Stay Connected
-            </h3>
-            <p className="mb-4 text-sm text-slate-500 leading-relaxed">
-              Get health tips and updates directly to your inbox.
-            </p>
-
-            <form onSubmit={(e) => e.preventDefault()} className="flex rounded-xl border border-slate-200 bg-white p-1 focus-within:border-blue-500 focus-within:ring-2 focus-within:ring-blue-100 transition-all">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="w-full px-3 py-2 text-sm outline-none bg-transparent"
-                required
-              />
-              <button 
-                type="submit" 
-                className="bg-[#2563EB] hover:bg-blue-700 text-white rounded-lg px-4 transition-colors font-medium"
-                aria-label="Subscribe"
-              >
-                →
-              </button>
-            </form>
 
             {/* Social Media Links */}
             <div className="mt-6 flex gap-4 text-slate-400">
