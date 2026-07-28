@@ -10,7 +10,7 @@ export default function Footer() {
     product: [
       { name: "Dashboard", href: "/dashboard" },
       { name: "Body Metrics", href: "/metrics" },
-      { name: "Health Vitals", href: "/vitals" },
+      { name: "Health Vitals", href: "dashboard/health-vitals" },
       { name: "Medicine Reminder", href: "/reminders" },
     ],
     
