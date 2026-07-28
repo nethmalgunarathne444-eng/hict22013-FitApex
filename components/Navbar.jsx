@@ -19,7 +19,7 @@ export default function Navbar() {
         </a>
 
         <ul className="nav-links">
-          {["Features", "How It Works", "Pricing", "About Us", "Blog"].map((item) => (
+          {["Features", "How It Works", "About Us"].map((item) => (
             <li key={item}><a href="#">{item}</a></li>
           ))}
         </ul>
