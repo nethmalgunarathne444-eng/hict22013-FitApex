@@ -1,10 +1,4 @@
 "use client";
-// components/dashboard/DashboardOverview.jsx
-// ─────────────────────────────────────────────────────────────
-// FOR THE PRESENTATION: `demoData` below is placeholder content
-// so the UI looks alive on stage. Once the backend is ready,
-// replace this with a real fetch and delete the demoData object.
-// ─────────────────────────────────────────────────────────────
 
 const demoData = {
   userName: "Alex",
