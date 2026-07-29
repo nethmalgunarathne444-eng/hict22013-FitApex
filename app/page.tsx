@@ -1,9 +1,12 @@
 import HeroSection from "@/components/HeroSection";
+import Footer from "@/components/Footer";
+
+
 
 export default function Home() {
-  return <main><HeroSection />
+  return <main>
+      <HeroSection />
   
-
 {/* ── FEATURES SECTION ── */}
 <section className="about-section">
   <div className="about-container">
