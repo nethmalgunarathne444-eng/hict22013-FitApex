@@ -9,15 +9,15 @@ export default function Footer() {
   const footerLinks = {
     product: [
       { name: "Dashboard", href: "/dashboard" },
-      { name: "Body Metrics", href: "/metrics" },
+      { name: "Body Metrics", href: "dashboard/body-metrics" },
       { name: "Health Vitals", href: "dashboard/health-vitals" },
-      { name: "Medicine Reminder", href: "/reminders" },
+      { name: "Medicine Reminder", href: "dashboard/medicine-reminder" },
     ],
     
     support: [
-      { name: "Help Center", href: "/help" },
-      { name: "Privacy Policy", href: "/privacy" },
-      { name: "Terms of Service", href: "/terms" },
+      { name: "Help Center", href: "/how-it-works" },
+      { name: "Privacy Policy", href: "/privacy-policy" },
+      { name: "Terms of Service", href: "//privacy-policy" },
     ],
   };
 
