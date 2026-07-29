@@ -1,7 +1,3 @@
-import React from "react";
-
-
-// ── Inline SVG: Fitness Boy Illustration ─────────────────────
 const FitnessBoy = () => (
   <svg
     viewBox="0 0 420 520"
@@ -192,32 +188,8 @@ export default function HeroSection() {
   return (
     <>
       <style>{`
-        /* ── Reset & base ─────────────────────────────────── */
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
         /* ── Nav ──────────────────────────────────────────── */
-        .nav {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          padding: 0 48px;
-          height: 72px;
-          background: #fff;
-          border-bottom: 1px solid #F3F4F6;
-          position: sticky;
-          top: 0;
-          z-index: 50;
-        }
-        .nav-logo {
-          display: flex;
-          align-items: center;
-          gap: 10px;
-          font-family: 'Inter', sans-serif;
-          font-size: 20px;
-          font-weight: 700;
-          color: #111827;
-          text-decoration: none;
-        }
+        
         .nav-logo-icon {
           width: 36px;
           height: 36px;
@@ -225,11 +197,6 @@ export default function HeroSection() {
           border-radius: 10px;
           display: grid;
           place-items: center;
-        }
-        .nav-links {
-          display: flex;
-          gap: 36px;
-          list-style: none;
         }
         .nav-links a {
           font-family: 'Inter', sans-serif;
@@ -240,41 +207,7 @@ export default function HeroSection() {
           transition: color 0.15s;
         }
         .nav-links a:hover { color: #2563EB; }
-        .nav-actions {
-          display: flex;
-          align-items: center;
-          gap: 16px;
-        }
-        .btn-ghost {
-          font-family: 'Inter', sans-serif;
-          font-size: 15px;
-          font-weight: 500;
-          color: #374151;
-          background: none;
-          border: none;
-          cursor: pointer;
-          padding: 8px 16px;
-          border-radius: 8px;
-          transition: background 0.15s;
-        }
         .btn-ghost:hover { background: #F3F4F6; }
-        .btn-primary {
-          font-family: 'Inter', sans-serif;
-          font-size: 15px;
-          font-weight: 600;
-          color: #fff;
-          background: linear-gradient(135deg, #2563EB, #1D4ED8);
-          border: none;
-          cursor: pointer;
-          padding: 10px 22px;
-          border-radius: 10px;
-          box-shadow: 0 4px 14px rgba(37,99,235,0.35);
-          transition: transform 0.15s, box-shadow 0.15s;
-          text-decoration: none;
-          display: inline-flex;
-          align-items: center;
-          gap: 6px;
-        }
         .btn-primary:hover {
           transform: translateY(-1px);
           box-shadow: 0 6px 20px rgba(37,99,235,0.42);
