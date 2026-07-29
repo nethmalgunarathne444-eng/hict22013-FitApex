@@ -11,7 +11,15 @@ const demoMedicines = [
 
 export default function MedicineReminderPage() {
   const [showForm, setShowForm] = useState(false);
-  const medicines = demoMedicines;
+  const [medicines, setMedicines] = useState(demoMedicines);
+
+  const toggleMedicineTaken = (id) => {
+    setMedicines((prev) =>
+      prev.map((medicine) =>
+        medicine.id === id ? { ...medicine, taken: !medicine.taken } : medicine
+      )
+    );
+  };
 
   const groupFor = (time) => {
     const h = parseInt(time);
@@ -101,9 +109,15 @@ export default function MedicineReminderPage() {
               <div className="group-label">{group}</div>
               {items.map((med) => (
                 <div className="med-row" key={med.id}>
-                  <div className={`med-check${med.taken ? " taken" : ""}`}>
+                  <label className={`med-check${med.taken ? " taken" : ""}`}>
+                    <input
+                      type="checkbox"
+                      checked={med.taken}
+                      onChange={() => toggleMedicineTaken(med.id)}
+                      className="med-checkbox"
+                    />
                     {med.taken && <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"/></svg>}
-                  </div>
+                  </label>
                   <div className="med-info">
                     <div className="med-name">{med.name}</div>
                     <div className="med-dosage">{med.dosage} · {med.frequency}</div>
