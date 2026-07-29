@@ -186,3 +186,129 @@
 .weight-trend { height: 36px; margin-top: 8px; }
 
 /* End moved styles */
+
+/* Mobile navigation */
+@media (max-width: 768px) {
+	.nav {
+		padding: 0 20px;
+		height: 64px;
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+
+	.nav-links {
+		display: none;
+	}
+
+	.nav-actions {
+		gap: 8px;
+	}
+
+	.btn-ghost,
+	.btn-primary {
+		font-size: 14px;
+		padding: 8px 12px;
+	}
+}
+
+/* Navbar styles */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 48px;
+  height: 72px;
+  background: #fff;
+  border-bottom: 1px solid #f3f4f6;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #111827;
+  text-decoration: none;
+}
+
+.nav-logo-icon {
+  width: 36px;
+  height: 36px;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 36px;
+  list-style: none;
+}
+
+.nav-links a {
+  font-family: Inter, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #374151;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.nav-links a:hover {
+  color: #2563eb;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.btn-ghost {
+  font-family: Inter, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #374151;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background 0.15s ease;
+}
+
+.btn-ghost:hover {
+  background: #f3f4f6;
+}
+
+.btn-primary {
+  font-family: Inter, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  border: none;
+  cursor: pointer;
+  padding: 10px 22px;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.42);
+}
+.icon-green { background: #f0fdf4; }
+.icon-amber { background: #fffbeb; }
+.icon-cyan  { background: #ecfeff; }

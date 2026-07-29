@@ -499,13 +499,13 @@ export default function HeroSection() {
 
           <p className="hero-sub">
             FitApex helps you track body metrics, health vitals, and
-            medications — all in one clean, easy-to-use dashboard.
+            medications all in one clean, easy to use dashboard.
             Stay consistent, spot trends, and take control of your health.
           </p>
 
           <div className="hero-ctas">
             <a href="#" className="btn-primary">Get Started Free →</a>
-            <a href="#" className="btn-secondary">
+            <a href="dashboard" className="btn-secondary">
               <span className="btn-play-icon">
                 <svg width="10" height="10" viewBox="0 0 12 12" fill="#2563EB">
                   <path d="M3 1.5l7 4.5-7 4.5V1.5z" />
