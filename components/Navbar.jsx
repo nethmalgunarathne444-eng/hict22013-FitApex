@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import LoginModal from "@/components/LoginModal";
+import Link from "next/link";
 
 export default function Navbar() {
   const [showModal, setShowModal] = useState(false);
@@ -19,8 +20,14 @@ export default function Navbar() {
         </a>
 
         <ul className="nav-links">
-          {["Features", "How It Works", "Pricing", "About Us", "Blog"].map((item) => (
-            <li key={item}><a href="#">{item}</a></li>
+          {[
+            { label: "Features", href: "#" },
+            { label: "How It Works", href: "/how-it-works" },
+            { label: "About Us", href: "#" },
+          ].map((item) => (
+            <li key={item.label}>
+              <Link href={item.href}>{item.label}</Link>
+            </li>
           ))}
         </ul>
 
