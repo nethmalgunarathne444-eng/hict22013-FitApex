@@ -309,3 +309,6 @@
   transform: translateY(-1px);
   box-shadow: 0 6px 20px rgba(37, 99, 235, 0.42);
 }
+.icon-green { background: #f0fdf4; }
+.icon-amber { background: #fffbeb; }
+.icon-cyan  { background: #ecfeff; }

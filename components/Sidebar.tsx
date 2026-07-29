@@ -68,7 +68,7 @@ export default function Sidebar() {
         .sidebar-toggle-label { opacity: ${collapsed ? 0 : 1}; transition: opacity 0.15s; }
       `}</style>
       <aside className="sidebar">
-        <a href="/dashboard" className="sidebar-logo">
+        <a href="/" className="sidebar-logo">
           <div className="sidebar-logo-icon">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
               <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
