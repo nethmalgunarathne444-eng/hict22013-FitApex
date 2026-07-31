@@ -16,8 +16,8 @@ export default function Footer() {
     
     support: [
       { name: "Help Center", href: "/how-it-works" },
-      { name: "Privacy Policy", href: "/privacy-policy" },
-      { name: "Terms of Service", href: "//privacy-policy" },
+      { name: "Privacy Policy", href: "/terms" },
+      { name: "Terms of Service", href: "/terms" },
     ],
   };
 
